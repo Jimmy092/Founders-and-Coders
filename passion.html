@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My passion</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+		<script src="script.js"></script>
+		<script src="carousel.js"></script>
+        <link rel="stylesheet" href="styles/light.css" id="theme">
+    </head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Gianmarco's Hobbies</h1>
+        </div>
+		<div class="img-container">
+			<img src="images/food.jpg" width="400" height="500"/>
+			<img src="images/food2.jpg" width="400" height="500"/>
+			<img src="images/food3.jpg" width="400" height="500"/>
+		</div>
+    </header>
+        <section>
+			<p>
+				I love learning new IT technologies, challenging myself on LeetCode and CodingGame and attending online courses. I love techno and rock music, which I listen to continuously.<br>
+				I enjoy going to the gym, cooking (not only pasta! Italians cook other things too :-D),
+				travelling to unusual places and watching football on the weekends, Serie A and Premier League mainly as I am a big fan of Juventus and Tottenham.<br>
+				I forgot..... Also, I have a huge passion for video games, yeah.... I am proud the be a nerd!
+	
+		  </p>
+		</section>
+
+        <main >
+			<h3>Tell me what you eat and I'll tell you who you are</h3>
+			<form id="food-form" method="post" action="#" >
+				<fieldset id="q1">
+					<legend>What is your favourite meal?</legend>						
+					<ul>
+						<li>
+							<label for="meal1">Breakfast</label>
+							<input type="radio" name="meal" id="meal1" value="0">	
+						</li>
+						<li>
+							<label for="meal2">Lunch</label>
+							<input type="radio" name="meal" id="meal2" value="5">
+						</li>
+						<li>
+							<label for="meal3">Dinner</label>
+							<input type="radio" name="meal" id="meal3" value="10">
+							
+						</li>
+					</ul>
+					
+				</fieldset>
+				<fieldset id="q2">
+					<legend>Which of those do you prefer?</legend>
+					<ul>
+						<li>
+							<label for="flavour1">Salty</label>
+							<input type="radio" name="flavour" id="flavour1" value="10">
+						</li>
+						<li>
+							<label for="flavour2">Sweet</label>
+							<input type="radio" name="flavour" id="flavour2" value="0">
+						</li>
+						<li>
+							<label for="flavour3">Both</label>
+							<input type="radio" name="flavour" id="flavour3" value="5">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset id="q3">
+					<legend>Select your favourite food</legend>
+					<ul>
+						<li>
+							<label for="food1">Sweets</label>
+							<input type="radio" name="food" id="food1" value="0">
+						</li>
+						<li>
+							<label for="food2">Meat and Fish</label>
+							<input type="radio" name="food" id="food2" value="30">
+						</li>
+						<li>
+							<label for="food3">Pasta</label>
+							<input type="radio" name="food" id="food3" value="15">
+						</li>
+					</ul>
+				</fieldset>
+				<button type="button" name="calculate" id="calculate" onclick="total()">Tell me what eater I am</button>
+			</form>
+		</main>
+		<aside  class="hidden" id="message" >
+			<h2></h2>
+			<p id="total"></p>
+		</aside>
+    <footer>
+		<a target="_blank" href="../application/index.html" alt="My App">Return to Home Page</a>
+    </footer>
+</body>
+</html>
